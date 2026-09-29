@@ -57,22 +57,26 @@ Requirements: Linux, Python ≥ 3.10 with `venv`, `tar`, `sha256sum`, and `curl`
 
 ```bash
 git clone https://github.com/ThomasRizzo/laya-offline && cd laya-offline
-bash install.sh                                  # all three checkpoints
-bash install.sh --models english                 # only the default English checkpoint
+./install.sh                                     # all three checkpoints
+./install.sh --models english                    # only the default English checkpoint
 ```
+
+(`install.sh` is committed executable; `bash install.sh ...` works the same if the executable bit
+was lost, e.g. after copying from a FAT/USB drive or a zip download.)
 
 ### Fully air-gapped
 
 On a connected machine with the **same Python version and CPU architecture** as the target:
 
 ```bash
-bash install.sh --download-only ./laya-kit       # tarballs + SHA256SUMS + install.sh + pip wheels
+./install.sh --download-only ./laya-kit          # tarballs + SHA256SUMS + install.sh + pip wheels
 ```
 
 Copy `laya-kit/` to the target, then:
 
 ```bash
-cd laya-kit && bash install.sh --offline          # pip --no-index from ./wheels, local tarballs only
+cd laya-kit && ./install.sh --offline             # (or: bash install.sh --offline)
+# pip --no-index from ./wheels, local tarballs only
 ```
 
 If you already have the tarballs, put them (and `SHA256SUMS`) next to `install.sh`, or point to them
