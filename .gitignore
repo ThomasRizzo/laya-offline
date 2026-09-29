@@ -1,0 +1,4 @@
+dist/
+wheels/
+*.tar
+*.tar.part*

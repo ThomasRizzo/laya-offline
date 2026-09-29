@@ -1,0 +1,7 @@
+# Core runtime pins used with laya==0.3.22 (tested on Linux x86_64, Python 3.13, CPU).
+# The full environment that was tested is in tested-freeze.txt.
+torch==2.14.0
+transformers==5.17.0
+tokenizers==0.23.2
+huggingface_hub==1.33.0
+safetensors==0.8.0

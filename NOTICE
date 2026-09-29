@@ -1,0 +1,15 @@
+laya-offline
+Copyright 2026 Thomas Rizzo
+
+This repository redistributes, unmodified, the model weights of the Laya decision
+models published by Convai Innovations on the Hugging Face Hub at
+https://huggingface.co/convaiinnovations/laya (revision
+55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851), licensed under the Apache License,
+Version 2.0. The Laya software (https://github.com/NandhaKishorM/laya,
+https://pypi.org/project/laya/) is also Apache-2.0 and is installed from PyPI;
+it is not redistributed here. The upstream model card (README.md) is included
+inside the english tarball.
+
+The english and typed-decisions checkpoints build on ModernBERT-large
+(answerdotai/ModernBERT-large, Apache-2.0); the multilingual checkpoint builds on
+mmBERT-base (jhu-clsp/mmBERT-base, MIT). See the upstream model card for details.
